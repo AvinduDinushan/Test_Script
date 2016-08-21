@@ -1,0 +1,12 @@
+package com.ad
+
+//list any import classes here.
+
+//declare any global variables here
+
+rule "Hello World"
+	when
+		helloWorldReferenceObject: HelloWorld( printMessage =="Java Honk Drools Hello World!" )
+	then
+		helloWorldReferenceObject.showMessage();
+	end
